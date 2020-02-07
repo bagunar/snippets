@@ -1,5 +1,5 @@
 ## Display numpy array image in jupyter notebook [pil, pillow, show]
-from PIL import Image
-Image.fromarray(arr_image)
+from PIL import Image as PILI
+PILI.fromarray(arr_image)
 
 ## 
