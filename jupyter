@@ -1,5 +1,11 @@
 ## Display numpy array image in jupyter notebook [pil, pillow, show]
-from PIL import Image as PILI
-PILI.fromarray(arr_image)
+from PIL import Image
+Image.fromarray(arr_image)
 
-## 
+## Display 100% width
+from IPython.core.display import display, HTML
+display(HTML("<style>.container { width:100% !important; }</style>"))
+
+## Display all output
+from IPython.core.interactiveshell import InteractiveShell
+InteractiveShell.ast_node_interactivity = "all"
