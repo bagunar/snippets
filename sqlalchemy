@@ -1,0 +1,6 @@
+## db has table 
+db.engine.dialect.has_table(db.engine, "table_name")
+
+## connexion
+with db.engine.connect() as conn:
+  conn.execute("stuff")
