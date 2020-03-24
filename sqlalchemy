@@ -4,3 +4,6 @@ db.engine.dialect.has_table(db.engine, "table_name")
 ## connexion
 with db.engine.connect() as conn:
   conn.execute("stuff")
+
+## table names
+db.engine.dialect.get_view_names(db.engine)
