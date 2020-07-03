@@ -1,2 +1,6 @@
 ## rebase hard local changes on other branch like master
 git rebase -Xtheirs master
+
+## squash all comits from a branch
+## ex: 20 commits
+git rebase -i HEAD~20
