@@ -4,3 +4,6 @@ git rebase -Xtheirs master
 ## squash all comits from a branch
 ## ex: 20 commits
 git rebase -i HEAD~20
+
+## delete all branches except master
+git branch | grep -v "master" | xargs git branch -D 
