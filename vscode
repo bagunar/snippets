@@ -1,0 +1,11 @@
+## PEP8 configuration
+{
+    "workbench.colorTheme": "Monokai",
+    "python.dataScience.sendSelectionToInteractiveWindow": true,
+    "breadcrumbs.enabled": true,
+    "window.zoomLevel": 2,
+    "python.formatting.autopep8Args": [
+        "--max-line-length=200"
+    ],
+    "python.linting.pep8Args": ["--max-line-length=120"]
+}
