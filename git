@@ -7,3 +7,9 @@ git rebase -i HEAD~20
 
 ## delete all branches except master
 git branch | grep -v "master" | xargs git branch -D 
+
+## avoid conflicts again on rebase you did before
+git config --global rerere.enabled 1
+
+## permission denied on commit 
+sudo chown -R $USER .git && chmod -R +rwX .git
