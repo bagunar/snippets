@@ -5,4 +5,4 @@ DROP TABLE nom_table
 SELECT COLUMN_NAME FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'my_table'
 
 # jsonb modif
-update ranking_linkedin_shares set share_document=jsonb_set(share_document, '{text}', to_jsonb(split_part(share_document->>'text', '…voir plus', 1)), false) where share_document->>'text' like '%…voir plus';
+update table set my_column=jsonb_set(my_column, '{text}', to_jsonb(split_part(my_column->>'text', '…voir plus', 1)), false) where my_column->>'text' like '%…voir plus';
