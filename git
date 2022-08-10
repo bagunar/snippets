@@ -13,3 +13,9 @@ git config --global rerere.enabled 1
 
 ## permission denied on commit 
 sudo chown -R $USER .git && chmod -R +rwX .git
+
+## make file executable
+chmod u+x PATH
+
+## write lines in file with echo and line break
+echo -e 'pouet\npouet'
