@@ -19,3 +19,6 @@ chmod u+x PATH
 
 ## write lines in file with echo and line break
 echo -e 'pouet\npouet'
+
+## extract all commits from one branch
+git log master --date-order --format='%ai %an <%ae> %h %f' --author="bagunar" > output
