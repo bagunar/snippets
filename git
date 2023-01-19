@@ -25,3 +25,7 @@ git log master --date-order --format='%ai %an <%ae> %h %f' --author="bagunar" > 
 
 ## replace local branch  with local
 git reset --hard origin/master
+
+## revert commits hard way
+git reset --hard 123
+
