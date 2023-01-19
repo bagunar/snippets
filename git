@@ -22,3 +22,6 @@ echo -e 'pouet\npouet'
 
 ## extract all commits from one branch
 git log master --date-order --format='%ai %an <%ae> %h %f' --author="bagunar" > output
+
+## replace local branch  with local
+git reset --hard origin/master
