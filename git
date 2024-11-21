@@ -29,3 +29,6 @@ git reset --hard origin/master
 ## revert commits hard way
 git reset --hard 123
 
+# Créer un nouveau commit qui contient tous les changements (pour eviter de se taper tous les squash au moment du rebase)
+git reset --soft HEAD~12
+git commit -m "Votre message de commit"
